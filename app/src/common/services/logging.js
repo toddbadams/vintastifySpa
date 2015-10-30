@@ -1,9 +1,10 @@
 (function() {
-  'use strict';
+    'use strict';
 
     angular.module('vt-common')
-        .factory('log', ['$log',
-            logFactory]);
+        .factory('vtLog', ['$log',
+            logFactory
+        ]);
 
     function logFactory($log) {
 
@@ -23,9 +24,20 @@
             };
         }
 
+        function logger(source) {
+            var _source = source;
+            return {
+                debug: function(message, data){
+                    return logDebug(message, data, _source);
+                },
+                error: function(message, data){
+                    return logError(message, data, _source);
+                }
+            };
+        }
+
         return {
-            debug: logDebug,
-            error: logError
+            logger: logger
         }
     }
 })();

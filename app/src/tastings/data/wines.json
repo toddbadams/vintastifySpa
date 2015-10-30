@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Pasqua Pinot Grigio 2014",
+    "appearence": {
+      "clarity": 1,
+      "intensity": 3,
+      "color": 6,
+      "colorCategory": "white"
+    },
+    "nose": {
+      "condition": 16,
+      "intensity": 18,
+      "aroma": {
+        "floral": [],
+        "greenFruit": [
+          24
+        ],
+        "citrusFruit": [
+          30
+        ],
+        "stoneFruit": [],
+        "tropicalFruit": [],
+        "redFruit": [],
+        "blackFruit": [],
+        "driedFruit": [],
+        "underripeness": [],
+        "herbaceous": [],
+        "herbal": [],
+        "vegetable": [],
+        "sweetSpice": [],
+        "pungentSpice": [],
+        "simplicity": [],
+        "autolytic": [],
+        "dairy": [],
+        "oak": [],
+        "kernel": [],
+        "animal": [],
+        "maturity": [],
+        "mineral": []
+      }
+    }
+  }
+]
