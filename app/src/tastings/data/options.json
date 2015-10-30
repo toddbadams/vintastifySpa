@@ -1,0 +1,217 @@
+[
+  {
+    "label": "Appearance",
+    "questions": [
+      {
+        "label": "Clarity",
+        "values": [
+          {
+            "id": 1,
+            "name": "clear"
+          },
+          {
+            "id": 1,
+            "name": "hazy"
+          }
+        ],
+        "isExclusive": true
+      },
+      {
+        "label": "Intensity",
+        "values": [
+          {
+            "id": 1,
+            "name": "pale"
+          },
+          {
+            "id": 1,
+            "name": "medium"
+          },
+          {
+            "id": 1,
+            "name": "deep"
+          }
+        ],
+        "isExclusive": true
+      },
+      {
+        "label": "Colour",
+        "questions": [
+          {
+            "label": "White",
+            "values": [
+              {
+                "id": 1,
+                "name": "lemon"
+              },
+              {
+                "id": 1,
+                "name": "gold"
+              },
+              {
+                "id": 1,
+                "name": "amber"
+              }
+            ],
+            "isExclusive": true
+          },
+          {
+            "label": "Rose",
+            "values": [
+              {
+                "id": 1,
+                "name": "pink"
+              },
+              {
+                "id": 1,
+                "name": "salmon"
+              },
+              {
+                "id": 1,
+                "name": "orange"
+              }
+            ],
+            "isExclusive": true
+          },
+          {
+            "label": "Red",
+            "values": [
+              {
+                "id": 1,
+                "name": "purple"
+              },
+              {
+                "id": 1,
+                "name": "ruby"
+              },
+              {
+                "id": 1,
+                "name": "garnet"
+              },
+              {
+                "id": 1,
+                "name": "tawney"
+              }
+            ],
+            "isExclusive": true
+          }
+        ],
+        "isExclusive": true
+      }
+    ],
+    "isExclusive": true
+  },
+  {
+    "label": "Nose",
+    "questions": [
+      {
+        "label": "Condition",
+        "values": [
+          {
+            "id": 1,
+            "name": "clean"
+          },
+          {
+            "id": 1,
+            "name": "unclean"
+          }
+        ],
+        "isExclusive": true
+      },
+      {
+        "label": "Intensity",
+        "values": [
+          {
+            "id": 1,
+            "name": "light"
+          },
+          {
+            "id": 1,
+            "name": "medium"
+          },
+          {
+            "id": 1,
+            "name": "pronounced"
+          }
+        ],
+        "isExclusive": true
+      },
+      {
+        "label": "Aroma",
+        "questions": [
+          {
+            "label": "Floral",
+            "values": [
+              {
+                "id": 1,
+                "name": "blossom"
+              },
+              {
+                "id": 1,
+                "name": "rose"
+              },
+              {
+                "id": 1,
+                "name": "violet"
+              }
+            ],
+            "isExclusive": false
+          },
+          {
+            "label": "Green Fruit",
+            "values": [
+              {
+                "id": 1,
+                "name": "green apple"
+              },
+              {
+                "id": 1,
+                "name": "red apple"
+              },
+              {
+                "id": 1,
+                "name": "gooseberry"
+              },
+              {
+                "id": 1,
+                "name": "pear"
+              },
+              {
+                "id": 1,
+                "name": "grape"
+              }
+            ],
+            "isExclusive": false
+          },
+          {
+            "label": "Citrus Fruit",
+            "values": [
+              {
+                "id": 1,
+                "name": "grapefruit"
+              },
+              {
+                "id": 1,
+                "name": "lemon juice"
+              },
+              {
+                "id": 1,
+                "name": "lemon peel"
+              },
+              {
+                "id": 1,
+                "name": "lime juice"
+              },
+              {
+                "id": 1,
+                "name": "lime peel"
+              }
+            ],
+            "isExclusive": false
+          }
+        ],
+        "isExclusive": true
+      }
+    ]
+  }
+]
