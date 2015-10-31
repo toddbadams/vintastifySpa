@@ -1,14 +1,14 @@
 (function() {
 	'use strict';
 	var _moduleName = 'vt-tastings',
-		_directiveName = 'tbTastingAppearance';
+		_directiveName = 'tbTastingCommon';
 
 	angular.module(_moduleName)
 		.directive(_directiveName, ['vtLog',
-			appearanceDirective
+			directive
 		]);
 
-	function appearanceDirective(log) {
+	function directive(log) {
 
     var _log = log.logger(_moduleName + '.' + _directiveName);
 
@@ -20,7 +20,7 @@
 				options: '=',
 				model: '=ngModel'
 			},
-			templateUrl: 'src/tastings/views/appearance.html',
+			templateUrl: 'src/tastings/views/common.html',
 			link: function($scope, element, attrs, controller) {
 				_log.debug('link function started', $scope)
 

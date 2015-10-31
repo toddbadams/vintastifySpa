@@ -1,43 +1,136 @@
 [
   {
-    "name": "Pasqua Pinot Grigio 2014",
-    "appearence": {
-      "clarity": 1,
-      "intensity": 3,
-      "color": 6,
-      "colorCategory": "white"
-    },
-    "nose": {
-      "condition": 16,
-      "intensity": 18,
-      "aroma": {
-        "floral": [],
-        "greenFruit": [
-          24
-        ],
-        "citrusFruit": [
-          30
-        ],
-        "stoneFruit": [],
-        "tropicalFruit": [],
-        "redFruit": [],
-        "blackFruit": [],
-        "driedFruit": [],
-        "underripeness": [],
-        "herbaceous": [],
-        "herbal": [],
-        "vegetable": [],
-        "sweetSpice": [],
-        "pungentSpice": [],
-        "simplicity": [],
-        "autolytic": [],
-        "dairy": [],
-        "oak": [],
-        "kernel": [],
-        "animal": [],
-        "maturity": [],
-        "mineral": []
+    "tastingId": 1,
+    "name": "Pasqua Pinot Grigio",
+    "propertyGroups": [
+      {
+        "propertyGroupId": 1,
+        "name": "common",
+        "properties": [
+          {
+            "propertyId": 1,
+            "name": "country",
+            "label": "Country",
+            "values": [
+              {
+                "propertyValueId": 1,
+                "name": "Italy"
+              }
+            ]
+          },
+          {
+            "propertyId": 1,
+            "name": "region",
+            "label": "Region",
+            "values": [
+              {
+                "propertyValueId": 1,
+                "name": "Veneto"
+              }
+            ]
+          },
+          {
+            "propertyId": 1,
+            "name": "vintage",
+            "label": "Vintage",
+            "number": {
+              "value": 2014
+            }
+          },
+          {
+            "propertyId": 1,
+            "name": "qualityStatus",
+            "label": "Quality Status",
+            "values": [
+              {
+                "propertyValueId": 1,
+                "name": "IGT"
+              }
+            ]
+          },
+          {
+            "propertyId": 1,
+            "name": "producer",
+            "label": "Producer",
+            "values": [
+              {
+                "propertyValueId": 1,
+                "name": "Pasqua"
+              }
+            ]
+          },
+          {
+            "propertyId": 1,
+            "name": "alcoholByVolume",
+            "label": "Alcohol By Volume",
+            "number": {
+              "value": 12,
+              "precision": 1,
+              "postfix": "%"
+            }
+          },
+          {
+            "propertyId": 1,
+            "name": "retailPrice",
+            "label": "Retail Price",
+            "number": {
+              "value": 5.99,
+              "precision": 2,
+              "prefix": "£"
+            }
+          }
+        ]
+      },
+      {
+        "propertyGroupId": 2,
+        "name": "appearence",
+        "properties": [
+          {
+            "propertyId": 2,
+            "name": "colorCategory",
+            "label": "Color",
+            "values": [
+              {
+                "propertyValueId": 1,
+                "name": "white"
+              }
+            ]
+          },
+          {
+            "propertyId": 3,
+            "name": "clarity",
+            "label": "Clarity",
+            "values": [
+              {
+                "propertyValueId": 2,
+                "name": "clear"
+              }
+            ]
+          },
+          {
+            "propertyId": 4,
+            "name": "intensity",
+            "label": "intensity",
+            "values": [
+              {
+                "propertyValueId": 3,
+                "name": "pale"
+              }
+            ]
+          },
+          {
+            "propertyId": 5,
+            "name": "color",
+            "label": "Color",
+            "values": [
+              {
+                "propertyValueId": 4,
+                "name": "lemon"
+              }
+            ]
+          }
+        ]
       }
-    }
+    ]
   }
 ]

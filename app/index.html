@@ -46,17 +46,12 @@
     </md-toolbar>
 
     <md-content flex id="content" >
-      <form name="satForm" layout="column" layout-sm="column">
-
-        <md-input-container flex>
-          <label>Name</label>
-          <input ng-model="wt.selected.name">
-        </md-input-container>
-
+      <form name="satForm" layout="column" layout-sm="column">      
+        <tb-tasting-common ng-model="wt.selected"></tb-tasting-appearance>
         <md-tabs md-dynamic-height md-border-bottom>
-          <md-tab label="appearance">
+          <md-tab label="{{wt.options[0].label}}">
             <md-content>
-            <tb-tasting-appearance ng-model="wt.selected.appearance" options="wt.options.appearance"></tb-tasting-appearance>
+            <tb-tasting-appearance ng-model="wt.selected.appearance" options="wt.options[0]"></tb-tasting-appearance>
             </md-content>
           </md-tab>
           <md-tab label="nose">
@@ -104,6 +99,7 @@
     <script src="./src/common/widgets/checkboxSelect.js"></script>
 
     <script src="./src/tastings/tastings.js"></script>
+    <script src="./src/tastings/directives/common.js"></script>
     <script src="./src/tastings/directives/appearance.js"></script>
     <script src="./src/tastings/services/tasting-service.js"></script>
     <script src="./src/tastings/tasting-controller.js"></script>

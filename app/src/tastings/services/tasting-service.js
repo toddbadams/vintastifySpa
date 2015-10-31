@@ -11,21 +11,54 @@
   function tastingsService(Restangular, log) {
     var _log = log.logger(_moduleName + '.' + _serviceName);
 
-    function loadJsonFile(filename) {
-      var response = Restangular.one(filename).get().then(function(data) {
-        _log.debug('loaded json file', data);
-        return data;
+    function loadWines() {
+      return Restangular
+        .one('/src/tastings/data/wines.json')
+        .get()
+        .then(function(data) {
+          angular.forEach(data, function(value, key){
+            value.model = {
+            common: commonModel(value)
+          };
+          });
+          
+          _log.debug('loaded wines json file', data);
+          return data;
+        });
+    }
+
+    function commonModel(data){
+      if(!data.propertyGroups) return null;
+      var group = findFirst(data.propertyGroups,"name","common");
+      var results = {
+        country: findFirst(group.properties,"name","country")
+      }
+
+      return results;
+    }
+
+    function loadOptions() {
+      return Restangular
+        .one('/src/tastings/data/options.json')
+        .get()
+        .then(function(data) {
+          _log.debug('loaded tastings options json file', data);
+          return data;
+        });
+    }
+
+    function findFirst(arr, prop, value){
+      var filteredArr = arr.filter(function(obj){
+        return obj[prop] === value;
       })
-      return response;
+
+      if(filteredArr.length<1) return null;
+      return filteredArr[0];
     }
 
     return {
-      loadWines: function() {
-        return loadJsonFile('/src/tastings/data/wines.json');
-      },
-      loadOptions: function() {
-        return loadJsonFile('/src/tastings/data/options.json');
-      }
+      loadWines: loadWines,
+      loadOptions: loadOptions
     };
   }
 })();
